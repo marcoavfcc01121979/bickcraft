@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/portfolio.css">   
     <link rel="stylesheet" href="css/responsivo.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
     <!-- #region -->
@@ -32,12 +33,12 @@
 
     <section class="introducao-interna interna_portfolio">
         <div class="container">
-            <h1>Portfólio</h1>
-            <p>conheça os projetos que amamos mostrar.</p>
+            <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+            <p data-anime="800" class="fadeInDown">conheça os projetos que amamos mostrar.</p>
         </div>
     </section>
     
-    <section class="container">
+    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
         <blockquote class="quote_clientes">
             <p>
                 "No mundo atual, a continua expansão da nossa atividade cumpre 
@@ -46,14 +47,36 @@
             </p>
             <cite>Barbara Moss</cite>
         </blockquote>
+        <blockquote class="quote_clientes">
+            <p>
+                "Nada melhor do que dar um rolê com a minha Bickcraft na orla.
+                Essa é a minha companheira mais fiel, nunca me traiu e está sempre a
+                minha disposição"
+            </p>
+            <cite>Jhony Rato</cite>
+        </blockquote>
+        <blockquote class="quote_clientes">
+            <p>
+                "Aqueles que ainda não possuem um Bickcraft, não sabem o que 
+                estão perdendo. A precisão é absurda e a velocidade transcendental.
+                Nunca vida nada iqual."
+            </p>
+            <cite>Bernardo</cite>
+        </blockquote>
     </section>
     
     <section class="portfolio">
-        <div class="container">
+        <div class="container" data-slide="portfolio">
             <ul class="portfolio_items">
                 <li class="grid-8"><img src="/web/img/portfolio/retro.jpg" alt="Bickcraft retro"></li>
                 <li class="grid-8"><img src="/web/img/portfolio/passeio.jpg" alt="Bickcraft passeio"></li>
                 <li class="grid-16"><img src="/web/img/portfolio/esporte.jpg" alt="Bickcraft esporte"></li>
+            </ul>
+            <ul class="portfolio_items">
+                <li class="grid-8"><img src="/web/img/portfolio/passeio.jpg" alt="Bickcraft passeio"></li>
+                <li class="grid-8"><img src="/web/img/portfolio/retro.jpg" alt="Bickcraft retro"></li>
+                <li class="grid-16"><img src="/web/img/portfolio/esporte.jpg" alt="Bickcraft esporte"></li>
+                
             </ul>
         </div>
     </section>
@@ -115,6 +138,8 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
